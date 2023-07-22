@@ -1,47 +1,17 @@
 #!/bin/bash
 
-# set default values
-input_file=""
-output_dir="output"
-threads=10
+# Usage: ./csrf_injection.sh <target_url> <csrf_token>
+# Example: ./csrf_injection.sh https://example.com/ abcdef1234567890
 
-# print usage information
-usage() {
-    echo "Usage: $0 -i input_file [-o output_dir] [-t threads]"
-    echo ""
-    echo "Options:"
-    echo "  -i  input file containing a list of subdomains"
-    echo "  -o  output directory (default: output)"
-    echo "  -t  number of threads (default: 10)"
-    exit 1
-}
+target_url=$1
+csrf_token=$2
 
-# parse command line arguments
-while getopts "i:o:t:" opt; do
-    case "${opt}" in
-        i) input_file=${OPTARG};;
-        o) output_dir=${OPTARG};;
-        t) threads=${OPTARG};;
-        *) usage;;
-    esac
-done
-
-# check if input file is set
-if [ -z "${input_file}" ]; then
-    usage
+if [[ -z "$target_url" || -z "$csrf_token" ]]; then
+  echo "Usage: ./csrf_injection.sh <target_url> <csrf_token>"
+  exit 1
 fi
 
-# create output directory
-mkdir -p ${output_dir}/crlf_injection
+echo "Checking if CSRF token is valid..."
+xsrfprobe -u "$target_url" -p "POST" --csrf-token "$csrf_token" --crawl "0" -v
 
-# loop through each subdomain in the input file and run CRLF injection
-while read subdomain; do
-    # run crlfuzz
-    crlfuzz -u ${subdomain} -t ${threads} -o ${output_dir}/crlf_injection/${subdomain}.txt
-    
-    # run CRLFsuite
-    crlfsuite -u ${subdomain} -o ${output_dir}/crlf_injection/${subdomain}_crlfsuite.txt
-    
-done < ${input_file}
-
-echo "CRLF injection completed successfully. Results can be found in ${output_dir}/crlf_injection directory."
+echo "Done."
