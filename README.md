@@ -1,5 +1,5 @@
 # Bug-Bounty-automation
-This is the ultimate bug bounty automation &amp; web hacking script that I've created
+This is the bug bounty automation &amp; web hacking script that I've created
 
 # Features
 
@@ -46,9 +46,6 @@ This is the ultimate bug bounty automation &amp; web hacking script that I've cr
 ---
 
 # Tools Used
-
-### All tools used below are available on github
-
 1.	Subdomain Enumeration: Sublist3r, Amass, subfinder, assetfinder, massdns, Findomain, 
 2.	Port Scanning: masscan, nmap
 3.	Screenshots: EyeWitness, aquatone
@@ -86,7 +83,7 @@ This is the ultimate bug bounty automation &amp; web hacking script that I've cr
 
 
 # Tool Structure
-read above all answers, analyse it and help me making my technologies.sh file . Update my technologies.sh file and make it more better, more efficient and more useful according to main.sh file scenario and structure.
+Analyse it and help me making my technologies.sh file . Update my technologies.sh file and make it more better, more efficient and more useful according to main.sh file scenario and structure.
 
 1.	bug_bounty_automation/
 2.	main.sh
@@ -125,4 +122,3 @@ read above all answers, analyse it and help me making my technologies.sh file . 
 35.	post_message.sh
 36.	subdomain_takeover.sh
 37.	vulnerability_scanners.sh
-
