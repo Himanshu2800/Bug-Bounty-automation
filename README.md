@@ -3,16 +3,6 @@ This is the bug bounty automation &amp; web hacking script that I've created
 
 # Features
 
-- [Recon](#Recon)
-    - [Subdomain Enumeration](#Subdomain-Enumeration)
-    - [Port Scanning](#Port-Scanning)
-    - [Screenshots](#Screenshots)
-    - [Technologies](#Technologies)
-    - [Content Discovery](#Content-Discovery)
-    - [Links](#Links)
-    - [Parameters](#Parameters)
-    - [Fuzzing](#Fuzzing)
-
 - [Exploitation](#Exploitation)
     - [Command Injection](#Command-Injection)
     - [CORS Misconfiguration](#CORS-Misconfiguration)
@@ -31,6 +21,16 @@ This is the bug bounty automation &amp; web hacking script that I've created
     - [SQL Injection](#SQL-Injection)
     - [XSS Injection](#XSS-Injection)
     - [XXE Injection](#XXE-Injection)
+
+- [Recon](#Recon)
+    - [Subdomain Enumeration](#Subdomain-Enumeration)
+    - [Port Scanning](#Port-Scanning)
+    - [Screenshots](#Screenshots)
+    - [Technologies](#Technologies)
+    - [Content Discovery](#Content-Discovery)
+    - [Links](#Links)
+    - [Parameters](#Parameters)
+    - [Fuzzing](#Fuzzing)
 
 - [Miscellaneous](#Miscellaneous)
     - [Passwords](#Passwords)
