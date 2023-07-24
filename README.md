@@ -1,5 +1,5 @@
 # Bug-Bounty-automation
-This is the bug bounty automation &amp; web hacking script that I've created
+This is the bug bounty automation program &amp; 
 
 # Features
 
