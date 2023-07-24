@@ -1,5 +1,5 @@
 # Bug-Bounty-automation
-This is the bug bounty automation program; 
+This is the bug bounty automation program
 
 # Features
 
