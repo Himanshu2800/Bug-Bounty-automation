@@ -1,5 +1,7 @@
 # Bug-Bounty-automation
-This is the bug bounty automation program
+Bug bounty programs are initiatives offered by organizations to reward security researchers and hackers for discovering and responsibly disclosing security vulnerabilities in their software, websites, or systems. These programs help organizations identify and fix security flaws before malicious actors can exploit them.
+Automation can play a significant role in bug bounty programs by enhancing efficiency, speeding up the vulnerability discovery process, and ensuring consistent and timely communication between researchers and the organization
+
 # Tools Used
 1.	Subdomain Enumeration: Sublist3r, Amass, subfinder, assetfinder, massdns, Findomain, 
 2.	Port Scanning: masscan, nmap
@@ -34,46 +36,3 @@ This is the bug bounty automation program
 31.	postMessage: postMessage-tracker, PostMessage_Fuzz_Tool
 32.	Subdomain Takeover: subjack, SubOver, autoSubTakeover, NSBrute, can-i-take-over-xyz, 
 33.	Vulnerability Scanners: nuclei, Sn1per, 
-
-
-
-# Tool Structure
-Analyse it and help me making my technologies.sh file . Update my technologies.sh file and make it more better, more efficient and more useful according to main.sh file scenario and structure.
-
-1.	bug_bounty_automation/
-2.	main.sh
-3.	modules/
-4.	subdomain_enumeration.sh
-5.	port_scanning.sh
-6.	screenshots.sh
-7.	technologies.sh
-8.	content_discovery.sh
-9.	links.sh
-10.	parameters.sh
-11.	fuzzing.sh
-12.	command_injection.sh
-13.	cors_misconfiguration.sh
-14.	crlf_injection.sh
-15.	csrf_injection.sh
-16.	directory_traversal.sh
-17.	file_inclusion.sh
-18.	graphql_injection.sh
-19.	header_injection.sh
-20.	insecure_deserialization.sh
-21.	insecure_direct_object_references.sh
-22.	open_redirect.sh
-23.	race_condition.sh
-24.	request_smuggling.sh
-25.	server_side_request_forgery.sh
-26.	sql_injection.sh
-27.	xss_injection.sh
-28.	xxe_injection.sh
-29.	passwords.sh
-30.	secrets.sh
-31.	git.sh
-32.	buckets.sh
-33.	cms.sh
-34.	json_web_token.sh
-35.	post_message.sh
-36.	subdomain_takeover.sh
-37.	vulnerability_scanners.sh
